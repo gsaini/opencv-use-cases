@@ -100,6 +100,7 @@ This repository includes a simple Streamlit app `background_removal.py` that let
 Run the app:
 
 ```bash
+source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run background_removal.py
 ```

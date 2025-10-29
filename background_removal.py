@@ -89,7 +89,7 @@ def main():
 
     if uploaded is not None:
         img_pil = Image.open(uploaded).convert('RGB')
-        st.image(img_pil, caption="Original", use_column_width=True)
+        st.image(img_pil, caption="Original", use_container_width=True)
 
         arr = pil_image_to_numpy(img_pil)
 
@@ -102,7 +102,7 @@ def main():
             out_pil = numpy_to_pil_image(out_arr)
 
             st.subheader("Processed")
-            st.image(out_pil, caption="Processed (alpha preserved)", use_column_width=True)
+            st.image(out_pil, caption="Processed (alpha preserved)", use_container_width=True)
 
             # prepare download
             buf = BytesIO()
